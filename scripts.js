@@ -9,9 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => document.getElementById("footer").innerHTML = data);
 
     
-    fetch("GoodCarousel.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("GoodCarousel").innerHTML = data);
+    if (document.getElementById("carousel")) {
+        fetch("GoodCarousel.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("carousel").innerHTML = data);
     }
 
     // Menu page interactivity (if needed)  
