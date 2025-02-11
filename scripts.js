@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => document.getElementById("footer").innerHTML = data);
 
     
-    if (document.getElementById("GoodCarousel")) {
+    if (document.getElementById("GoodCarousel")) { 
         fetch("GoodCarousel.html")
             .then(response => response.text())
             .then(data => document.getElementById("GoodCarousel").innerHTML = data);
