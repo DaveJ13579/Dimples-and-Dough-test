@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     fetch("GoodCarousel.html")
         .then(response => response.text())
-        .then(data => document.getElementById("carousel").innerHTML = data);
+        .then(data => document.getElementById("GoodCarousel").innerHTML = data);
     }
 
     // Menu page interactivity (if needed)  
